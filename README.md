@@ -1,9 +1,10 @@
+
 # Rainfall Prediction Using ERA5-Land Weather Data
 
 A machine learning project that analyses historical rainfall patterns and predicts daily rainfall using historical weather variables from the **ERA5-Land reanalysis dataset**.
 
 <p align="center">
-  <img src="images/monthly_rainfall_seasonality.png" alt="Average monthly rainfall showing monsoon seasonality" width="80%">
+  <img src="IMAGES/monthly_rainfall_seasonality.png" alt="Average monthly rainfall showing monsoon seasonality" width="80%">
 </p>
 
 ## Project Overview
@@ -119,19 +120,19 @@ The notebook investigates:
 
 #### Annual rainfall
 
-![Annual rainfall by year](images/annual_rainfall.png)
+![Annual rainfall by year](IMAGES/annual_rainfall.png)
 
 The saved notebook output identifies 2019 as the wettest year (approximately 1,536 mm) and 2005 as the driest year (approximately 749 mm). The 2025 record is incomplete.
 
 #### Monthly rainfall seasonality
 
-![Average rainfall by month](images/monthly_rainfall_seasonality.png)
+![Average rainfall by month](IMAGES/monthly_rainfall_seasonality.png)
 
 The notebook reports that approximately 88% of rainfall occurs during June–September.
 
 #### Rainfall and weather-variable correlation
 
-![Correlation heatmap](images/rainfall_correlation_heatmap.png)
+![Correlation heatmap](IMAGES/rainfall_correlation_heatmap.png)
 
 The strongest positive correlations in the notebook are with soil moisture (0.55) and relative humidity (0.44). Solar radiation (-0.50) and surface pressure (-0.35) have negative correlations. Correlation does not imply causation.
 
@@ -164,7 +165,7 @@ Models compared:
 
 #### Actual vs predicted rainfall
 
-![Actual and predicted daily rainfall](images/actual_vs_predicted_rainfall.png)
+![Actual and predicted daily rainfall](IMAGES/actual_vs_predicted_rainfall.png)
 
 The plot compares actual and Random Forest predicted rainfall for June–September 2019. The model follows some wet/dry variation but smooths or underestimates the highest peaks.
 
@@ -193,15 +194,15 @@ Evaluation uses precision, recall, F1-score, ROC-AUC and PR-AUC. Accuracy alone 
 
 #### Confusion matrices
 
-![Classification confusion matrices](images/classification_confusion_matrices.png)
+![Classification confusion matrices](IMAGES/classification_confusion_matrices.png)
 
 #### Precision-recall curve
 
-![Precision recall curve](images/precision_recall_curve.png)
+![Precision recall curve](IMAGES/precision_recall_curve.png)
 
 #### Random Forest feature importance
 
-![Random Forest feature importance](images/random_forest_feature_importance.png)
+![Random Forest feature importance](IMAGES/random_forest_feature_importance.png)
 
 In the saved notebook output, the most important classification features are previous-day rainfall (`rain_lag1`), the previous-seven-day rainfall average (`rain_avg7`), previous-day soil moisture and previous-day relative humidity.
 
@@ -213,13 +214,13 @@ The following structure is recommended for GitHub:
 rainfall-prediction/
 │
 ├── README.md
-├── Rainfall_Pred_Simplified(2).ipynb
+├── Rainfall_Pred_Simplified.ipynb
 │
-├── images/
+├── IMAGES/
+│   ├── actual_vs_predicted_rainfall.png
 │   ├── annual_rainfall.png
 │   ├── monthly_rainfall_seasonality.png
 │   ├── rainfall_correlation_heatmap.png
-│   ├── actual_vs_predicted_rainfall.png
 │   ├── classification_confusion_matrices.png
 │   ├── precision_recall_curve.png
 │   └── random_forest_feature_importance.png
@@ -294,7 +295,7 @@ Place all six CSV files in the notebook's working directory, using the filenames
 jupyter notebook
 ```
 
-Open `Rainfall_Pred_Simplified(2).ipynb` and run all cells from top to bottom.
+Open `Rainfall_Pred_Simplified.ipynb` and run all cells from top to bottom.
 
 ## IMD Rainfall Categories Used for EDA
 
