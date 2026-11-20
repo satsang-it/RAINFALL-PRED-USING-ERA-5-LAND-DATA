@@ -1,5 +1,9 @@
 
 # Rainfall Prediction Using ERA5-Land Weather Data
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Domain](https://img.shields.io/badge/Domain-Climate%20Analytics&WeatherPrediction-teal)
+![ML](https://img.shields.io/badge/Task-Binary%20Classification-orange)
+![Status](https://img.shields.io/badge/Status-Research%20Project-lightgrey)
 
 A machine learning project that analyses historical rainfall patterns and predicts daily rainfall using historical weather variables from the **ERA5-Land reanalysis dataset**.
 
