@@ -1,7 +1,7 @@
 
 # Rainfall Prediction Using ERA5-Land Weather Data
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Domain](https://img.shields.io/badge/Domain-Climate%20Analytics&WeatherPrediction-teal)
+![Domain](https://img.shields.io/badge/Domain-Climate%20Analytics%20&%20WeatherPrediction-teal)
 ![ML](https://img.shields.io/badge/Task-Binary%20Classification-orange)
 ![Status](https://img.shields.io/badge/Status-Research%20Project-lightgrey)
 
